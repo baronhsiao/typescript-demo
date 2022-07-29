@@ -122,4 +122,10 @@ async function getData() {
 
 getData()
 
-//  --------- class ---------
+//  --------- 泛型 ---------
+function printSomething<T>(a: T) {
+  console.log(a)
+}
+printSomething<number>(1)
+printSomething<string>('A')
+printSomething<boolean>(true)
